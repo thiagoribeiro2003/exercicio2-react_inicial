@@ -1,0 +1,7 @@
+/* https://www.alura.com.br/artigos/css-object-fit-trabalhando-proporcoes */
+.foto-produto {
+    object-fit: contain;
+    object-position: center;
+    height: 100px;
+    width: 100px;
+}

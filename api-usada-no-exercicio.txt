@@ -1,0 +1,8 @@
+-Fake Store API
+https://fakestoreapi.com/
+
+-Documentação
+https://fakestoreapi.com/docs
+
+-Endpoint necessário para o exercício:
+https://fakestoreapi.com/products
