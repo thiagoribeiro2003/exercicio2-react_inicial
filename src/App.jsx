@@ -1,6 +1,7 @@
 import { useState, useEffect, Route } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import { BrowserRouter, Link } from "react-router-dom";
 
 const App = () => {
   const [produtos, setProdutos] = useState([]);
@@ -20,23 +21,25 @@ const App = () => {
 
   return (
     <>
-      <header>
-        <h1>Exercício 2</h1>
-      </header>
+      <BrowserRouter>
+        <header>
+          <h1>Exercício 2</h1>
+        </header>
 
-      <section>
-        {produtos.map(({ id, title, price, image }) => (
-          <article>
-            <div key={id}>
+        <section>
+          {produtos.map(({ id, title, price, image }) => (
+            <article key={id}>
               <p>
                 <img className="imagem" src={image} alt="" />
               </p>
-              <h2 Navlink="">{title}</h2>
-              <h2>R${price}</h2>
-            </div>
-          </article>
-        ))}
-      </section>
+              <h2>
+                <Link to={"/"}> {title} </Link>
+              </h2>
+              <h2>{price}</h2>
+            </article>
+          ))}
+        </section>
+      </BrowserRouter>
     </>
   );
 };
