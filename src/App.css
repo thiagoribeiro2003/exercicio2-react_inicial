@@ -28,6 +28,52 @@
   color: #61dafb;
 }
 
+h1 {
+  text-align: center;
+  /* margin-top: 25px;*/
+  /*margin-bottom: 50px;*/
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #f7f7f7;
+  border: 2px solid black;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.imagem {
+  object-fit: contain;
+  object-position: center;
+  height: 100px;
+  width: 100px;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+article {
+  border: 2px solid black;
+  margin: 10px 0px;
+  height: 20rem;
+  width: 20rem;
+}
+
+article {
+  text-align: center;
+}
+
+article {
+  background-color: #91def3;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

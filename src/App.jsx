@@ -19,15 +19,25 @@ const App = () => {
   }, []);
 
   return (
-    <div>
-      {produtos.map(({ id, title, price }) => (
-        <section key={id}>
-          {id}
-          {title}
-          {price}
-        </section>
-      ))}
-    </div>
+    <>
+      <header>
+        <h1>Exercício 2</h1>
+      </header>
+
+      <section>
+        {produtos.map(({ id, title, price, image }) => (
+          <article>
+            <div key={id}>
+              <p>
+                <img className="imagem" src={image} alt="" />
+              </p>
+              <h2>{title}</h2>
+              <h2>R${price}</h2>
+            </div>
+          </article>
+        ))}
+      </section>
+    </>
   );
 };
 
