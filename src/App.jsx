@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, Route } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
@@ -31,7 +31,7 @@ const App = () => {
               <p>
                 <img className="imagem" src={image} alt="" />
               </p>
-              <h2>{title}</h2>
+              <h2 Navlink="">{title}</h2>
               <h2>R${price}</h2>
             </div>
           </article>
